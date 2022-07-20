@@ -3,8 +3,7 @@ var port = 3000;
 const app = express ();
 
 app.get('/', function(req, res){
-    console.log ("hello");
-    res.send('Tu es un genie')
+   res.sendFile(__dirname + "/index.html")
 })
 
 app.listen (port,function(){
